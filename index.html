@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <section class="header">
+        <img src="./assets/image/Logo.png" alt="A copy of brand logo" />
+        <h2>For Individuals</h2>
+        <p id="desktop_display">
+          Start benefiting from the wellness experience. For companies looking
+          on increasing productivity, and improving organization wellness.
+        </p>
+        <p id="mobile_display">Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.</p>
+      </section>
+      <section class="form">
+        <form action="/signup" method="post">
+          <div class="input_row">
+            <div class="input_col">
+            <label for="FirstName">First Name</label>
+            <input type="text" id="FirstName" placeholder="Tolu" />
+            </div>
+            <div class="input_col">
+            <label for="LastName">Last Name</label>
+            <input type="text" id="LastName" />
+            </div>
+          </div>
+          <div class="input_row">
+            <div class="input_col">
+              <label for="SelectGender">Gender</label>
+              <select name="Gender" id="SelectGender">
+                <option value="none">Select here</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="undisclosed">Prefer not to say</option>
+              </select>
+            </div>
+            <div class="input_col">
+              <label for="DOB">Date of Birth</label>
+              <div class="input_wrapper">
+                <input type="text" id="DOB" placeholder="Select here"/>
+                <i class="fa fa-calendar icon"></i>
+              </div> 
+            </div> 
+          </div>
+          <div class="input_row">
+            <div class="input_col">
+              <label for="Weight">Weight (KG)</label>
+              <input type="text" id="Weight" placeholder="Enter Weight" />
+            </div>
+            <div class="input_col">
+              <label for="Height">Height (CM)</label>
+              <input type="text" id="Height" placeholder="Enter Height"/>
+            </div>
+          </div>
+          <div class="input_row">
+            <div class="input_col">
+                <label for="ActivityLevel">Activity Level<label>
+                <select name="ActivityLevel" id="ActivityLevel">
+                  <option value="none">Select here</option>
+                </select> 
+            </div>
+          </div>
+          <div class="input_row">
+            <div class="input_col" id="stubborn_div">
+              <label for="password">Password</label>
+              <div class="input_wrapper">
+                <i class="fa fa-eye icon"></i>
+                <input type="password" id="password"/> 
+              </div>
+            </div>
+          </div>
+          <div class="input_row">
+            <div class="input_col">
+            <button type="submit">Register</button>
+            </div>
+          </div>
+          <p>
+            By clicking Register, you agree to our <u>Terms of Use</u> and our
+            <u>Privacy Policy</u>
+          </p>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
